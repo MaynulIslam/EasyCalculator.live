@@ -43,6 +43,94 @@
     gtag('js', new Date());
     gtag('config', 'G-JGP14YZ4V8');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the minimum drain slope required by code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IPC Table 704.1 requires a minimum slope of 1/4 inch per foot (2.08%) for drains smaller than 3 inches in diameter, and 1/8 inch per foot (1.04%) for drains 3 inches and larger. For example, a 20-foot run of 2-inch drain pipe needs at least 5 inches of vertical drop. Steeper slopes (up to 1/2 inch per foot) are allowed for smaller drains as long as self-scouring velocity is maintained."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I size a water supply pipe correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Water supply pipe sizing depends on three factors: the total fixture unit load (from IPC Table 604.3), the pipe length from meter to fixture, and the available street pressure. A common rule of thumb is to keep flow velocity below 8 fps to minimize noise and erosion. The Pipe Sizing tab uses the Hazen-Williams formula to calculate pressure loss and velocity for copper, PEX, PVC, and galvanized steel pipe for any given flow rate and pipe diameter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I size a water heater for my home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Water heater sizing is based on peak-hour demand, not daily usage. The DOE First Hour Rating (FHR) must meet or exceed your peak-hour demand in gallons. Estimate peak demand by counting simultaneous hot-water uses: a shower = 10 GPH, dishwasher = 6 GPH, laundry = 7 GPH. For a family of four with two simultaneous showers and a dishwasher, that's roughly 26 GPH — look for a tank with FHR ≥ 26 GPH. The Water Heater Sizing tab calculates this automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the ideal water pressure for a home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IPC 604.3 sets a minimum static pressure of 15 PSI at fixtures and a maximum of 80 PSI. For comfort and fixture longevity, 40–60 PSI is considered optimal. Pressures above 80 PSI require a Pressure Reducing Valve (PRV). Low pressure below 40 PSI causes weak shower flow; high pressure above 80 PSI accelerates fixture wear, causes water hammer, and can void appliance warranties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What causes low water pressure in a house?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common causes of low water pressure include: (1) corroded or undersized supply pipes, (2) partially closed shut-off valves, (3) a failing pressure reducing valve (PRV), (4) high demand from multiple simultaneous fixtures, (5) municipal supply pressure drop at peak hours, and (6) significant elevation change between meter and fixtures. The Pressure Drop calculator can identify whether pipe friction or elevation is the primary culprit by computing losses along the supply run."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a fixture unit and how is it used for drain sizing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Drainage Fixture Unit (DFU) is a measure of the probable discharge load a fixture contributes to the drainage system. IPC Table 709.1 assigns DFU values: toilet = 4 DFU, lavatory = 1 DFU, shower = 2 DFU, kitchen sink = 2 DFU, bathtub = 2 DFU. Drain pipes are then sized from IPC Table 710.1(2) based on total DFUs and slope. The Drain Slope calculator uses DFU loads to verify that your drain can handle the expected flow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a tank and tankless water heater?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A tank water heater stores a fixed volume (30–80 gallons) at set temperature, ready for instant use but losing heat continuously (standby loss). A tankless (on-demand) heater heats water only when needed, eliminating standby loss and providing unlimited hot water — but it requires high-flow gas or large electrical capacity (150–200 A service for electric). Tankless is more energy-efficient for low-to-moderate usage; tank heaters are better for households with high simultaneous demand spikes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I size a sump pump?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sump pump sizing depends on three factors: (1) estimated inflow rate (GPH) from the drainage area during peak rain events, (2) static head — the vertical lift from the sump pit to the discharge point, and (3) friction head from the discharge pipe run and fittings. Total Dynamic Head (TDH) = static head + friction head. The pump must deliver the required GPH at that TDH. The Sump Pump Sizing tab calculates TDH and recommends pump HP based on your inputs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What pressure loss can I expect through pipe fittings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pipe fittings add pressure loss equivalent to a certain length of straight pipe, known as equivalent length. Common 3/4-inch copper equivalents: 90° elbow = 2 ft, 45° elbow = 1 ft, tee (through) = 1.5 ft, gate valve (open) = 0.5 ft, ball valve (open) ≈ 0.3 ft. For long pipe runs with many fittings, equivalent-length friction losses can rival or exceed the straight-pipe losses. The Pressure Drop tab accepts fitting counts and computes total equivalent length automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do plumbing projects require permits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — new drain/waste/vent (DWV) systems, new supply branch lines, water heater replacements, and any work that opens walls typically requires a permit and inspection. Simple repairs such as replacing a faucet, fixing a leaking trap, or swapping a toilet usually do not. Requirements vary by jurisdiction. Always check with your local building or plumbing department before starting work. Unpermitted plumbing can cause problems during home sale inspections and may not be covered by homeowner's insurance."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav class="navbar" id="navbar">
@@ -570,6 +658,41 @@
               <div style="margin-top:12px;font-size:0.82rem;color:#64748b">Multiply Q (ft³/s) by 448.83 to convert to GPM.</div>
             </div>
 
+            <h3>Worked Example: Drain Slope Verification</h3>
+            <p>A contractor needs to run a 3-inch ABS drain 32 feet horizontally from a bathroom group to the main stack. What vertical drop is required and what flow capacity will the pipe have?</p>
+            <div class="formula-box" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:20px;margin:16px 0;font-family:monospace;font-size:0.95rem;color:#0f2b4c">
+              <strong>Minimum slope (IPC 704.1 for 3" pipe):</strong> 1/8" per foot<br>
+              Vertical drop = 32 ft × 0.125 in/ft = <strong>4 inches minimum</strong><br><br>
+              <strong>Manning's equation flow capacity at 1/8" per foot:</strong><br>
+              S = 0.125/12 = 0.01042 ft/ft<br>
+              A = π × (0.125)² = 0.04909 ft² (3" pipe, D = 0.25 ft)<br>
+              R = D/4 = 0.0625 ft<br>
+              Q = (1.49/0.013) × 0.04909 × (0.0625)^(2/3) × (0.01042)^(1/2)<br>
+              Q ≈ <strong>0.088 ft³/s = 39.5 GPM</strong>
+            </div>
+
+            <h3>Worked Example: Water Heater Sizing</h3>
+            <p>A household has 4 occupants. In the peak morning hour they run 2 showers simultaneously, run the dishwasher, and do one load of laundry. What First Hour Rating (FHR) is needed?</p>
+            <ul style="line-height:1.9;color:#475569">
+              <li>2 showers × 10 GPH each = 20 GPH</li>
+              <li>Dishwasher = 6 GPH</li>
+              <li>Clothes washer = 7 GPH</li>
+              <li><strong>Total peak demand = 33 GPH</strong></li>
+              <li>Select a water heater with <strong>FHR ≥ 33 gallons</strong> — typically a 40-gallon natural gas unit (FHR ~70 GPH) or a 50-gallon electric unit (FHR ~60 GPH)</li>
+            </ul>
+
+            <h3>Pipe Sizing Rules of Thumb</h3>
+            <p>When detailed Hazen-Williams calculations are not practical, plumbers use these code-based sizing rules from IPC Table 604.3:</p>
+            <ul style="line-height:1.9;color:#475569">
+              <li><strong>3/4" supply main:</strong> Serves up to 4–6 fixture units from the meter to the first branch</li>
+              <li><strong>1/2" branch lines:</strong> Serve individual fixtures; keep runs under 20 ft for adequate pressure</li>
+              <li><strong>1" main from meter:</strong> Required for homes with more than 6 fixture units or long supply runs (&gt; 100 ft)</li>
+              <li><strong>Velocity limit:</strong> Keep supply pipe velocity below 8 fps to prevent erosion and noise — the most commonly exceeded rule on small-diameter PEX installations</li>
+            </ul>
+
+            <h3>Sump Pump Sizing Quick Reference</h3>
+            <p>Most residential sump pits collect between 1,000 and 3,000 GPH during heavy rain events. A 1/3 HP pump delivers about 2,200 GPH at 10 ft of head; a 1/2 HP pump delivers about 3,000 GPH at the same head. Always size for at least 1.5× the estimated peak inflow to give the pump duty cycles that allow the motor to cool. For basements with a history of flooding, a 3/4 HP pump with a battery backup is the recommended standard.</p>
+
             <h3>Safety Note</h3>
             <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:16px;color:#78350f;font-size:0.9rem;line-height:1.7">
               <strong>Important:</strong> These calculations are provided for educational and preliminary design purposes only. Plumbing systems must be designed and installed by a licensed plumber in accordance with local codes and ordinances, which may differ from the IPC values used here. Always obtain the required permits and inspections. The authors make no warranty regarding the accuracy or fitness of these results for any specific installation.
@@ -632,6 +755,52 @@
         <li><strong>Instant Results</strong> — No loading, no waiting</li>
         <li><strong>Works Everywhere</strong> — Desktop, tablet, and mobile friendly</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="faq-section" style="max-width:860px;margin:0 auto 48px;padding:0 20px">
+    <h2 style="font-size:1.5rem;font-weight:700;color:#0f2b4c;margin-bottom:24px">Frequently Asked Questions — Plumbing Calculator</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:16px">
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the minimum drain slope required by plumbing code? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">IPC Table 704.1 requires a minimum slope of 1/4 inch per foot for drains smaller than 3 inches in diameter, and 1/8 inch per foot for drains 3 inches and larger. For example, a 20-foot run of 2-inch drain needs at least 5 inches of vertical drop. The Drain Slope tab verifies your slope against these IPC minimums and shows full-bore flow capacity using Manning's equation.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I size a water supply pipe for my home? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Supply pipe sizing depends on the total fixture unit load, pipe run length, and available street pressure. A key rule: keep flow velocity below 8 fps to prevent erosion and noise. The Pipe Sizing tab uses the Hazen-Williams formula to calculate pressure loss and velocity for copper, PEX, PVC, CPVC, and galvanized steel — enter your pipe diameter, length, and flow rate to get an instant result.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I size a water heater for my household? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Size the water heater using its First Hour Rating (FHR) — the gallons it can deliver in one peak hour. Estimate your peak demand: each simultaneous shower = 10 GPH, dishwasher = 6 GPH, clothes washer = 7 GPH. A family of four running two showers and a dishwasher simultaneously needs FHR ≥ 26 GPH. The Water Heater Sizing tab calculates this automatically based on occupants and simultaneous uses.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the ideal water pressure for a residential home? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">IPC 604.3 sets a minimum of 15 PSI at fixtures and a maximum of 80 PSI. Optimal comfort range is 40–60 PSI. Pressure above 80 PSI requires a Pressure Reducing Valve (PRV) and accelerates fixture wear. Pressure below 40 PSI results in weak shower flow and long fixture fill times. Use the Pressure Drop tab to measure losses along your supply run.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What causes low water pressure in a house? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Common causes include: corroded or undersized supply pipes, a partially closed main shut-off, a failing pressure reducing valve (PRV), high simultaneous fixture demand, municipal supply pressure drops at peak hours, and significant elevation change between meter and fixtures. The Pressure Drop calculator can identify whether pipe friction or elevation is the primary factor by computing losses along your supply run.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is a Drainage Fixture Unit (DFU) and how is it used? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">A DFU measures the probable discharge load a plumbing fixture places on the drain system. IPC Table 709.1 values: toilet = 4 DFU, shower = 2 DFU, lavatory = 1 DFU, kitchen sink = 2 DFU, bathtub = 2 DFU. Drain pipes are then sized from IPC Table 710.1 based on total DFUs and slope. The Drain Slope tab uses DFU totals to verify your drain can handle the expected peak flow.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between a tank and tankless water heater? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">A tank water heater stores 30–80 gallons at set temperature for instant availability but loses heat continuously (standby loss). A tankless heater warms water only on demand, eliminating standby loss and providing unlimited hot water — but requires high-flow gas or large electrical capacity (150–200 A service for electric models). Tankless is more efficient for low-to-moderate use; tank heaters are better for households with large simultaneous demand spikes.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I size a sump pump for my basement? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Sump pump sizing requires three inputs: estimated peak inflow rate (GPH), static head (vertical lift from pit to discharge), and friction head from the discharge pipe. Total Dynamic Head (TDH) = static head + friction head. The pump must deliver the required GPH at that TDH. Most residential pits need 1,000–3,000 GPH capacity. A 1/3 HP pump handles about 2,200 GPH at 10 ft of head; 1/2 HP handles about 3,000 GPH.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How much pressure loss do pipe fittings add? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Fittings add pressure loss expressed as equivalent pipe length. For 3/4-inch copper: a 90° elbow ≈ 2 ft equivalent, 45° elbow ≈ 1 ft, tee (through) ≈ 1.5 ft, gate valve (open) ≈ 0.5 ft, ball valve (open) ≈ 0.3 ft. On long runs with many fittings, fitting losses can rival straight-pipe losses. The Pressure Drop tab accepts fitting counts and automatically calculates total equivalent length and pressure loss.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Do plumbing projects require a permit? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">New DWV systems, new supply branch lines, water heater replacements, and any work that opens walls typically require a permit and inspection. Simple repairs — replacing a faucet, fixing a leaking trap, swapping a toilet — usually do not require a permit. Requirements vary by jurisdiction. Always check with your local building department before starting work. Unpermitted plumbing can cause problems during home sale inspections.</p>
+      </details>
     </div>
   </section>
 

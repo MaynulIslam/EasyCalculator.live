@@ -76,6 +76,22 @@
     gtag('js', new Date());
     gtag('config', 'G-JGP14YZ4V8');
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the difference between UTC and GMT?","acceptedAnswer":{"@type":"Answer","text":"UTC (Coordinated Universal Time) and GMT (Greenwich Mean Time) are for practical purposes the same — both reference the time at 0° longitude. The technical difference is that GMT is a time zone based on the Earth's rotation, while UTC is an atomic-clock-based standard. In everyday use, UTC and GMT can be treated as identical."}},
+    {"@type":"Question","name":"How many time zones are in Canada?","acceptedAnswer":{"@type":"Answer","text":"Canada spans 6 standard time zones: Newfoundland (UTC−3:30), Atlantic (UTC−4), Eastern (UTC−5), Central (UTC−6), Mountain (UTC−7), and Pacific (UTC−8). During Daylight Saving Time, most zones shift forward by 1 hour. Saskatchewan observes Mountain Standard Time year-round and does not observe DST."}},
+    {"@type":"Question","name":"Does Canada observe Daylight Saving Time?","acceptedAnswer":{"@type":"Answer","text":"Most of Canada observes DST — clocks spring forward 1 hour on the second Sunday in March and fall back 1 hour on the first Sunday in November. Exceptions include Saskatchewan (stays on CST year-round), most of British Columbia's northeast region, and parts of Quebec and Ontario near the Manitoba border."}},
+    {"@type":"Question","name":"What time zone is Toronto in?","acceptedAnswer":{"@type":"Answer","text":"Toronto is in the Eastern Time Zone (ET). During standard time (November to March), it is UTC−5 (EST — Eastern Standard Time). During Daylight Saving Time (March to November), it shifts to UTC−4 (EDT — Eastern Daylight Time)."}},
+    {"@type":"Question","name":"How do I convert EST to PST?","acceptedAnswer":{"@type":"Answer","text":"Pacific Standard Time (PST) is 3 hours behind Eastern Standard Time (EST). To convert EST to PST, subtract 3 hours. For example, 2:00 PM EST = 11:00 AM PST. During Daylight Saving Time, both zones shift, so EDT to PDT is still a 3-hour difference."}},
+    {"@type":"Question","name":"Why is Newfoundland half an hour off from other time zones?","acceptedAnswer":{"@type":"Answer","text":"Newfoundland Standard Time (NST) is UTC−3:30 — a half-hour offset rather than a full hour. This dates to the 19th century when local solar time for St. John's was established at UTC−3:30:52. When time zones were standardized, Newfoundland retained its historically established offset rather than aligning to a whole-hour zone."}},
+    {"@type":"Question","name":"How do I schedule a meeting across multiple time zones?","acceptedAnswer":{"@type":"Answer","text":"Use this converter to find a time that falls within business hours (9 AM–5 PM) for all participants. The best overlap window between North America and Europe is typically 9 AM–12 PM EST (2–5 PM GMT). For North America and Asia, early morning EST (8–10 AM) aligns with late afternoon in Tokyo or Singapore. Always confirm DST status for both locations."}},
+    {"@type":"Question","name":"What is a Unix timestamp?","acceptedAnswer":{"@type":"Answer","text":"A Unix timestamp is the number of seconds that have elapsed since January 1, 1970, 00:00:00 UTC (called the Unix Epoch). It is used extensively in programming and databases to store date/time values in a single integer. For example, April 16, 2026, 12:00:00 UTC = Unix timestamp 1776081600."}}
+  ]
+}
+</script>
 </head>
 <body>
 <nav class="navbar" id="navbar">
@@ -198,6 +214,26 @@
 
       <h3>Tips for International Meetings</h3>
       <p>When scheduling across time zones, always confirm whether DST applies to both locations. Spring and autumn transitions often fall on different dates in different countries, causing temporary shifts in the offset between two zones.</p>
+
+      <h3>Canadian Time Zones at a Glance</h3>
+      <ul>
+        <li><strong>Newfoundland (NST/NDT):</strong> UTC−3:30 / UTC−2:30 — the only half-hour zone in North America</li>
+        <li><strong>Atlantic (AST/ADT):</strong> UTC−4 / UTC−3 — Nova Scotia, New Brunswick, PEI</li>
+        <li><strong>Eastern (EST/EDT):</strong> UTC−5 / UTC−4 — Ontario, Quebec, Toronto, Montreal</li>
+        <li><strong>Central (CST/CDT):</strong> UTC−6 / UTC−5 — Manitoba, most of Saskatchewan's west</li>
+        <li><strong>Mountain (MST/MDT):</strong> UTC−7 / UTC−6 — Alberta, and Saskatchewan (no DST)</li>
+        <li><strong>Pacific (PST/PDT):</strong> UTC−8 / UTC−7 — BC, Vancouver</li>
+      </ul>
+
+      <h3>Worked Conversion Example</h3>
+      <p>A meeting is scheduled for <strong>2:00 PM EST (Toronto)</strong>. What time is it in other cities? Vancouver (PST): 11:00 AM (3 hours behind). London (GMT): 7:00 PM (5 hours ahead). Paris (CET): 8:00 PM (6 hours ahead). Mumbai (IST): 12:30 AM next day (10.5 hours ahead). Tokyo (JST): 4:00 AM next day (14 hours ahead). Sydney (AEDT): 6:00 AM next day (16 hours ahead during Australian summer).</p>
+
+      <h3>The DST Trap: When Offsets Temporarily Change</h3>
+      <p>The US and Canada switch DST on the second Sunday in March and first Sunday in November. Europe switches about 2–3 weeks later in spring and earlier in fall. During the gap between these switch dates, the offset between North America and Europe is temporarily 1 hour different from normal — a common source of confusion for international teams. Always use a time zone converter for the specific date of your meeting, not a static offset chart.</p>
+
+      <h3>Regions That Don't Observe DST</h3>
+      <p>Notable DST non-participants: <strong>Saskatchewan</strong> (Canada) stays on CST year-round. <strong>Arizona</strong> (USA, except the Navajo Nation) stays on MST year-round. <strong>Japan, China, India</strong> have no DST. <strong>Most of Africa</strong> does not observe DST. This means that a business relationship between, say, Toronto and Saskatoon involves a time difference that shifts seasonally — they are 1 hour apart in winter and the same time in summer.
+      </p>
     </div>
   </div>
 
@@ -239,6 +275,44 @@
       <li><strong>Instant Results</strong> — No loading, no waiting</li>
       <li><strong>Works Everywhere</strong> — Desktop, tablet, and mobile friendly</li>
     </ul>
+  </div>
+</section>
+
+<section class="faq-section" style="max-width:860px;margin:0 auto 48px;padding:0 20px">
+  <h2 style="font-size:1.5rem;font-weight:700;color:#0f2b4c;margin-bottom:24px">Frequently Asked Questions</h2>
+  <div class="faq-list" style="display:flex;flex-direction:column;gap:16px">
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between UTC and GMT? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">For practical purposes they are the same. GMT (Greenwich Mean Time) is a time zone based on the Earth's rotation at 0° longitude. UTC (Coordinated Universal Time) is a more precise standard maintained by atomic clocks. In everyday use — scheduling meetings, setting timestamps, expressing offsets — UTC and GMT are interchangeable.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How many time zones are in Canada? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Canada spans 6 standard time zones: Newfoundland (UTC−3:30), Atlantic (UTC−4), Eastern (UTC−5), Central (UTC−6), Mountain (UTC−7), and Pacific (UTC−8). During Daylight Saving Time most of these shift forward 1 hour. Saskatchewan observes Mountain Standard Time year-round without DST.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Does Canada observe Daylight Saving Time? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Most of Canada observes DST — clocks spring forward on the second Sunday in March and fall back on the first Sunday in November. Major exceptions: Saskatchewan (stays on CST year-round), parts of northeastern BC, and a few communities in Ontario and Quebec near the Manitoba border.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What time zone is Toronto in? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Toronto is in the Eastern Time Zone. In winter (standard time) it is EST — UTC−5. In summer (daylight time, March–November) it is EDT — UTC−4. The same zone applies to Ottawa, Montreal, and most of Ontario and Quebec.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I convert EST to PST? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Pacific Time (PST/PDT) is always 3 hours behind Eastern Time (EST/EDT). To convert: subtract 3 hours. For example, 2:00 PM EST = 11:00 AM PST. During DST, both zones shift together, so the 3-hour gap remains constant year-round between these two zones.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Why is Newfoundland half an hour off from other time zones? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Newfoundland Standard Time (NST, UTC−3:30) dates to the 19th century when local solar time for St. John's was established. When global time zones were standardized, Newfoundland retained this historically established half-hour offset. It is one of only a handful of half-hour time zones in the world, alongside India (UTC+5:30), Iran (UTC+3:30), and a few others.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I find a meeting time that works across time zones? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Use this converter to find a time within business hours (9 AM–5 PM) for all participants. Good overlap windows: North America ↔ Europe: 9 AM–12 PM EST (2–5 PM GMT). North America ↔ India: 7:30–9:30 AM EST (6–8 PM IST). North America ↔ Asia-Pacific: very difficult — typically requires one side taking an early morning or late evening slot.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is a Unix timestamp? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">A Unix timestamp is the number of seconds elapsed since January 1, 1970, 00:00:00 UTC — called the Unix Epoch. It is widely used in programming, databases, and APIs to store date/time as a single integer. For example, April 16, 2026, 12:00:00 UTC ≈ Unix timestamp 1,776,081,600. Converting between Unix timestamps and human-readable dates is straightforward with a time zone converter.</p>
+    </details>
   </div>
 </section>
 

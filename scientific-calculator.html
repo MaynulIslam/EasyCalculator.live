@@ -184,6 +184,22 @@
     gtag('js', new Date());
     gtag('config', 'G-JGP14YZ4V8');
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the difference between sin, cos, and tan?","acceptedAnswer":{"@type":"Answer","text":"These are trigonometric functions relating angles to side ratios in a right triangle. sin(θ) = opposite ÷ hypotenuse; cos(θ) = adjacent ÷ hypotenuse; tan(θ) = opposite ÷ adjacent (or sin ÷ cos). Common values: sin(30°) = 0.5, cos(60°) = 0.5, tan(45°) = 1."}},
+    {"@type":"Question","name":"What does the log button do on a scientific calculator?","acceptedAnswer":{"@type":"Answer","text":"log calculates the base-10 logarithm — the power to which 10 must be raised to equal the input. log(100) = 2 because 10² = 100. ln calculates the natural logarithm (base e ≈ 2.718). log is used in chemistry (pH = −log[H⁺]), acoustics (decibels), and earthquake intensity (Richter scale)."}},
+    {"@type":"Question","name":"What is the difference between degrees and radians?","acceptedAnswer":{"@type":"Answer","text":"Degrees divide a full circle into 360 parts. Radians measure angle as the ratio of arc length to radius — a full circle = 2π radians ≈ 6.283. Key conversions: 180° = π radians; 90° = π/2 radians; 45° = π/4 radians. Use DEG mode for everyday calculations; RAD mode for calculus and physics."}},
+    {"@type":"Question","name":"How do I calculate a factorial?","acceptedAnswer":{"@type":"Answer","text":"A factorial (n!) is the product of all positive integers up to n. 5! = 5 × 4 × 3 × 2 × 1 = 120. By definition, 0! = 1. Factorials grow extremely quickly: 10! = 3,628,800; 20! ≈ 2.43 × 10¹⁸. They are used in permutations, combinations, and probability."}},
+    {"@type":"Question","name":"What is Euler's number (e)?","acceptedAnswer":{"@type":"Answer","text":"Euler's number e ≈ 2.71828 is one of the most important constants in mathematics. It is the base of the natural logarithm and arises naturally in continuous growth and decay problems. Compound interest continuously compounded uses e: A = Pe^(rt). It appears in calculus, probability, and complex number theory."}},
+    {"@type":"Question","name":"How do I raise a number to a power?","acceptedAnswer":{"@type":"Answer","text":"Use the xʸ button (or ^ key): enter the base, press xʸ, enter the exponent, press =. For example: 2 xʸ 10 = 1024. For square (x²) and cube (x³), dedicated buttons apply the specific exponent directly. Negative exponents: 2^−3 = 1/8 = 0.125."}},
+    {"@type":"Question","name":"What does the inverse (INV or 2nd) function do?","acceptedAnswer":{"@type":"Answer","text":"The INV or 2nd function toggles a second set of functions on the calculator buttons. It gives access to inverse operations: sin⁻¹ (arcsin), cos⁻¹ (arccos), tan⁻¹ (arctan), 10^x (inverse of log), and e^x (inverse of ln). Use arcsin/cos/tan to find an angle when you know a ratio."}},
+    {"@type":"Question","name":"How is a scientific calculator different from a basic calculator?","acceptedAnswer":{"@type":"Answer","text":"A basic calculator handles the four arithmetic operations (+ − × ÷). A scientific calculator adds trigonometric functions, logarithms, exponents, roots, factorials, constants (π, e), and typically supports degree/radian modes and parentheses for complex expressions. Scientific calculators follow strict order of operations (PEMDAS/BODMAS), while some basic calculators evaluate left-to-right."}}
+  ]
+}
+</script>
 </head>
 <body>
   <nav class="navbar" id="navbar">
@@ -288,6 +304,24 @@
             <strong>Decibels:</strong> 10 × log(P₁/P₂) → Divide, then log, then ×10<br>
             <strong>pH calculation:</strong> −log[H⁺] → Enter concentration, press log, press +/−
           </div>
+
+          <h3>Order of Operations</h3>
+          <p>This calculator follows PEMDAS/BODMAS: <strong>P</strong>arentheses, <strong>E</strong>xponents, <strong>M</strong>ultiplication and <strong>D</strong>ivision (left to right), <strong>A</strong>ddition and <strong>S</strong>ubtraction (left to right). So entering <code>2 + 3 × 4</code> correctly evaluates to 14, not 20. Use parentheses to override the default order: <code>(2 + 3) × 4 = 20</code>.</p>
+
+          <h3>Key Trigonometric Values to Know</h3>
+          <p>Essential values in degree mode: sin(0°) = 0, sin(30°) = 0.5, sin(45°) = 0.707, sin(60°) = 0.866, sin(90°) = 1. cos(0°) = 1, cos(30°) = 0.866, cos(60°) = 0.5, cos(90°) = 0. tan(0°) = 0, tan(30°) = 0.577, tan(45°) = 1, tan(60°) = 1.732. These values appear constantly in physics, engineering, and geometry problems.</p>
+
+          <h3>When to Use DEG vs RAD Mode</h3>
+          <p>Use <strong>DEG mode</strong> for everyday problems: construction angles, navigation, surveying, and most high school/college physics. Use <strong>RAD mode</strong> for calculus, signal processing, and advanced physics — in these fields, angles in radians simplify the math significantly (the derivative of sin(x) is cos(x) only when x is in radians). If you get strange results from trig functions, check your mode first.</p>
+
+          <h3>Practical Real-World Uses</h3>
+          <ul>
+            <li><strong>Electricians:</strong> Power factor calculations use cos(θ); 3-phase power uses √3</li>
+            <li><strong>Carpenters:</strong> Rafter length = run ÷ cos(pitch angle); use tan for rise-over-run</li>
+            <li><strong>Finance:</strong> Compound interest: A = P × e^(rt) uses the e^x function for continuous compounding</li>
+            <li><strong>Chemistry:</strong> pH = −log[H⁺]; equilibrium constants use log/ln extensively</li>
+            <li><strong>Acoustics:</strong> Decibels: dB = 10 × log(P₁/P₂) — directly using the log function</li>
+          </ul>
         </div>
       </div>
 
@@ -351,6 +385,44 @@
       </ul>
     </div>
   </section>
+
+<section class="faq-section" style="max-width:860px;margin:0 auto 48px;padding:0 20px">
+  <h2 style="font-size:1.5rem;font-weight:700;color:#0f2b4c;margin-bottom:24px">Frequently Asked Questions</h2>
+  <div class="faq-list" style="display:flex;flex-direction:column;gap:16px">
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between sin, cos, and tan? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">These trigonometric functions relate angles to side ratios in right triangles. sin(θ) = opposite ÷ hypotenuse; cos(θ) = adjacent ÷ hypotenuse; tan(θ) = opposite ÷ adjacent = sin ÷ cos. Key values: sin(30°) = 0.5, cos(60°) = 0.5, tan(45°) = 1. Remember: SOH-CAH-TOA.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What does the log button do? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">log calculates the base-10 logarithm: the power to which 10 must be raised to equal the input. log(100) = 2 because 10² = 100; log(1000) = 3. ln calculates the natural logarithm (base e). log is used in pH calculations (pH = −log[H⁺]), decibels (10×log of power ratio), and the Richter earthquake scale.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between degrees and radians? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Degrees divide a circle into 360 equal parts. Radians measure angle as arc length ÷ radius — a full circle = 2π ≈ 6.283 radians. Key conversions: 180° = π rad; 90° = π/2 rad; 45° = π/4 rad. Use DEG for everyday problems; use RAD for calculus and physics (where the derivative of sin(x) = cos(x) only holds in radians).</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I calculate a factorial? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">A factorial (n!) is the product of all positive integers from 1 to n. 5! = 5×4×3×2×1 = 120. By definition, 0! = 1. Factorials grow explosively: 10! = 3,628,800; 20! ≈ 2.4 × 10¹⁸. They appear in combinations (C(n,r) = n! ÷ (r! × (n−r)!)) and probability calculations.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I raise a number to a power? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Press the xʸ button (or ^ on keyboard): enter the base, press xʸ, enter the exponent, press =. Example: 2 xʸ 10 = 1,024. Dedicated buttons: x² squares the number (shortcut), x³ cubes it. Negative exponents: 2^−3 = 1/8 = 0.125. Fractional exponents: 8^(1/3) = 2 (cube root of 8).</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is Euler's number (e)? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Euler's number e ≈ 2.71828 is the base of the natural logarithm and one of the most important constants in mathematics. It arises naturally in continuous growth: bank interest compounded continuously uses A = Pe^(rt). It appears throughout calculus, probability theory (normal distribution), and complex number analysis.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What does the INV or 2nd button do? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">INV (Inverse) or 2nd toggles a second layer of functions on the same buttons. It unlocks: sin⁻¹ (arcsin — finds the angle from a ratio), cos⁻¹, tan⁻¹, 10^x (inverse of log), e^x (inverse of ln). Use arcsin/cos/tan when you know a side ratio and need to find the angle: if sin(θ) = 0.5, then θ = sin⁻¹(0.5) = 30°.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How is a scientific calculator different from a basic calculator? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">A basic calculator handles + − × ÷ only. A scientific calculator adds trig functions, logarithms, exponents, roots, factorials, constants (π, e, φ), and supports degree/radian switching. Critically, scientific calculators follow strict order of operations (PEMDAS), while simple left-to-right calculators give wrong answers for expressions like 2+3×4.</p>
+    </details>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="footer-container">

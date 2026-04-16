@@ -47,6 +47,94 @@
     gtag('js', new Date());
     gtag('config', 'G-JGP14YZ4V8');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the maximum recommended voltage drop on a branch circuit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The NEC recommends no more than 3% voltage drop on a branch circuit (NEC 210.19 Informational Note No. 4) and no more than 5% total on the combined feeder and branch circuit. For a 120 V circuit, 3% equals 3.6 V, meaning the conductor voltage should not fall below 116.4 V at the load."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I select the correct wire gauge for a circuit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with the circuit's continuous load, multiply by 1.25 (NEC 210.19), then look up the ampacity from NEC Table 310.16 for copper or aluminum wire. Apply derating factors for conduit fill (more than 3 current-carrying conductors) and ambient temperature above 30°C. The Wire & Breaker tab in this calculator handles all these adjustments automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the NEC 80% rule for breakers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard circuit breaker is rated for continuous operation at only 80% of its ampere rating. For example, a 20 A breaker should not carry more than 16 A continuously (loads lasting 3 hours or more). To find the required breaker size, divide the continuous load by 0.80. Breakers listed for 100% continuous duty are an exception but are rarely used in residential settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between single-phase and three-phase power?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Single-phase power uses two conductors (line and neutral) and delivers power in one sinusoidal wave. Three-phase power uses three conductors offset by 120° and delivers three overlapping power pulses, resulting in smoother power delivery and roughly 1.73× (√3) more power for the same conductor size. Three-phase is standard in commercial and industrial facilities. Use the 3-Phase Power tab to convert between kW, kVA, kVAR, and line current."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is power factor and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Power factor (PF) is the ratio of real power (kW) to apparent power (kVA), ranging from 0 to 1. A PF of 1.0 means all supplied power is doing useful work. Inductive loads like motors and transformers pull the PF below 1, increasing current draw for the same useful power output. Utilities often charge demand penalties for low power factor. The 3-Phase Power calculator shows how PF affects kVA and line current."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can aluminum wire be used for branch circuits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aluminum wire is permitted for branch circuits but requires special precautions. Use only devices rated AL-CU or CO/ALR. Aluminum oxidizes and expands more than copper, so all terminations must be torqued to spec and treated with anti-oxidant compound. Because aluminum has higher resistivity (K = 21.2 vs 12.9 for copper), it requires a larger gauge for the same ampacity — typically two AWG sizes larger (e.g., 2 AWG aluminum ≈ 4 AWG copper for ampacity)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between AWG and kcmil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AWG (American Wire Gauge) is used for conductors from #18 through #4/0 — lower numbers mean larger wire. Above 4/0 AWG, conductor sizes are expressed in kcmil (kilo circular mils), a measure of cross-sectional area. Common kcmil sizes are 250, 350, 500, and 750. One circular mil equals the cross-sectional area of a wire 1 mil (0.001 inch) in diameter. The voltage drop formula uses CM (circular mils) directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I size a motor branch circuit correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under NEC Article 430: (1) Look up the motor's Full Load Current (FLC) from NEC Tables 430.248 (single-phase) or 430.250 (three-phase) — do not use nameplate amps for conductor sizing. (2) Size the branch circuit conductor at 125% of FLC (NEC 430.22). (3) Size the overload relay at 115–125% of FLC (NEC 430.32). (4) Size the short-circuit/ground-fault protection (fuse or breaker) from NEC Table 430.52 — up to 250% of FLC for an inverse time breaker. The Motor Sizing tab automates all four steps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a permit for electrical work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In virtually all jurisdictions, any new circuit, panel upgrade, or service change requires a permit and inspection by the Authority Having Jurisdiction (AHJ). Minor repairs like replacing a receptacle or switch typically do not require a permit, but this varies by municipality. Always check with your local building department. Unpermitted electrical work can void homeowner's insurance and cause problems when selling the property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What conduit fill percentage does NEC allow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NEC Chapter 9, Table 1 limits conduit fill to 53% for one conductor, 31% for two conductors, and 40% for three or more conductors. The Conduit Fill tab sums wire cross-section areas from NEC Table 5, compares the total to the conduit's interior area from NEC Table 4, and flags any over-fill condition. Always leave enough room so conductors can be pulled without damage."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav class="navbar" id="navbar">
@@ -714,6 +802,41 @@
           VD% = (VD ÷ Source Voltage) × 100
         </div>
 
+        <h3>Worked Example: Voltage Drop Calculation</h3>
+        <p>Suppose you are running a 20 A, 120 V branch circuit to a workshop that is 75 feet from the panel using 12 AWG copper wire (6,530 CM). Is the voltage drop within the NEC 3% limit?</p>
+        <div class="formula-box">
+          <strong>Single-Phase VD = (2 × K × I × L) / CM</strong><br><br>
+          VD = (2 × 12.9 × 20 × 75) / 6,530<br>
+          VD = 38,700 / 6,530 = <strong>5.93 V</strong><br><br>
+          VD% = 5.93 / 120 × 100 = <strong>4.94%</strong> — exceeds the 3% NEC recommendation<br><br>
+          <strong>Fix:</strong> Upgrade to 10 AWG (10,380 CM):<br>
+          VD = (2 × 12.9 × 20 × 75) / 10,380 = 3.73 V = <strong>3.1%</strong> ✓
+        </div>
+
+        <h3>Worked Example: Conduit Fill</h3>
+        <p>You need to pull three 12 AWG THHN wires and two 14 AWG THHN wires into a 3/4-inch EMT conduit. Is this within the 40% fill limit?</p>
+        <div class="formula-box">
+          <strong>NEC Chapter 9 Table 5 wire areas:</strong><br>
+          12 AWG THHN = 0.0133 in² × 3 = 0.0399 in²<br>
+          14 AWG THHN = 0.0097 in² × 2 = 0.0194 in²<br>
+          Total wire area = <strong>0.0593 in²</strong><br><br>
+          <strong>NEC Table 4 — 3/4" EMT internal area:</strong> 0.533 in²<br>
+          40% fill limit = 0.533 × 0.40 = <strong>0.213 in²</strong><br><br>
+          0.0593 in² &lt; 0.213 in² — <strong>Pass ✓</strong> (only 11.1% fill used)
+        </div>
+
+        <h3>Motor Sizing Quick Reference</h3>
+        <p>For a standard 5 HP, 230 V single-phase motor, NEC Table 430.248 gives FLC = 28 A. Applying NEC Article 430 rules:</p>
+        <ul>
+          <li><strong>Branch circuit conductor:</strong> 28 × 1.25 = 35 A → use <strong>8 AWG copper</strong> (40 A ampacity)</li>
+          <li><strong>Overload relay:</strong> 28 × 1.25 = 35 A (or up to 40 A if the motor won't start)</li>
+          <li><strong>Inverse time breaker:</strong> 28 × 2.50 = 70 A max (NEC Table 430.52)</li>
+          <li><strong>Disconnect size:</strong> Must be rated at least 115% of FLC = 32.2 A → use <strong>40 A disconnect</strong></li>
+        </ul>
+
+        <h3>NEC 80% Continuous Load Rule — Practical Impact</h3>
+        <p>The 80% rule applies to any load that runs for 3 hours or more. Common examples: commercial lighting, EV chargers, HVAC units, and data center equipment. If you have a 16 A continuous load, you need a 20 A circuit (16 ÷ 0.80 = 20 A). The breaker must also be sized at 20 A minimum, even though the load only draws 16 A, because continuous loads must not exceed 80% of breaker rating. This is one of the most frequently misapplied NEC rules in residential and commercial installations.</p>
+
         <h3>Safety Note</h3>
         <p style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:14px;color:#7f1d1d;font-size:0.9rem">
           <strong>Important:</strong> These calculators are provided for educational and planning purposes only. All electrical work must be performed by a licensed electrician and inspected by the authority having jurisdiction (AHJ). Always verify calculations against the current adopted edition of the National Electrical Code (NEC) in your jurisdiction. Local codes may have additional requirements that supersede NEC minimums.
@@ -775,6 +898,52 @@
         <li><strong>Instant Results</strong> — No loading, no waiting</li>
         <li><strong>Works Everywhere</strong> — Desktop, tablet, and mobile friendly</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="faq-section" style="max-width:860px;margin:0 auto 48px;padding:0 20px">
+    <h2 style="font-size:1.5rem;font-weight:700;color:#0f2b4c;margin-bottom:24px">Frequently Asked Questions — Electrical Calculator</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:16px">
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the NEC recommended maximum voltage drop on a branch circuit? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">The NEC recommends no more than 3% voltage drop on a branch circuit (NEC 210.19 Informational Note No. 4) and no more than 5% combined on feeder plus branch circuit. For a 120 V circuit, 3% equals 3.6 V of allowable drop. When voltage drop exceeds 3%, the fix is usually to increase wire gauge by one or two AWG sizes.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I choose the correct wire gauge for a circuit? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Multiply the continuous load by 1.25 (NEC 210.19), then look up ampacity in NEC Table 310.16. Apply derating for more than 3 conductors in conduit and for ambient temperature above 30°C. Use the Wire &amp; Breaker tab above — it applies all derating factors automatically and recommends the correct AWG and breaker size.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the NEC 80% rule for circuit breakers? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Standard breakers are rated for continuous operation at 80% of their ampere rating. A 20 A breaker should not carry more than 16 A continuously (loads lasting 3 hours or more). Divide your continuous load by 0.80 to find the required minimum breaker size. Breakers rated for 100% continuous duty are an exception, but are uncommon in residential panels.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between single-phase and three-phase power? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Single-phase uses two conductors and delivers one sinusoidal power wave. Three-phase uses three conductors offset by 120° and delivers roughly 1.73× (√3) more power for the same conductor size, with smoother delivery. Three-phase is standard in commercial and industrial facilities. The 3-Phase Power tab converts between kW, kVA, kVAR, and line current for any power factor.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Can aluminum wire be used for residential branch circuits? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Aluminum wire is permitted but requires CO/ALR or AL-CU rated devices, proper anti-oxidant compound at all terminations, and torquing connections to spec. Because aluminum has higher resistivity than copper, it requires a wire roughly two AWG sizes larger for the same ampacity. For example, 2 AWG aluminum provides similar ampacity to 4 AWG copper.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What conduit fill percentage does NEC allow? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">NEC Chapter 9, Table 1 limits conduit fill to 53% for one conductor, 31% for two conductors, and 40% for three or more conductors. The Conduit Fill tab sums wire cross-section areas from NEC Table 5 and compares them to the conduit's internal area from NEC Table 4, flagging any over-fill condition instantly.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I size a motor branch circuit under NEC Article 430? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Use Full Load Current (FLC) from NEC Tables 430.248 (single-phase) or 430.250 (three-phase) — not the nameplate amps. Size the conductor at 125% of FLC (NEC 430.22), the overload relay at 115–125% of FLC (NEC 430.32), and the short-circuit protection up to 250% of FLC for an inverse-time breaker (NEC Table 430.52). The Motor Sizing tab handles all four steps automatically.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is power factor and why does it matter for electrical systems? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Power factor (PF) is the ratio of real power (kW) to apparent power (kVA). A PF below 1.0 means conductors carry more current than the useful power alone would require, increasing line losses and conductor heating. Utilities often charge demand penalties for commercial accounts with PF below 0.90. Capacitor banks are commonly added to correct low power factor from inductive motor loads.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between AWG and kcmil? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">AWG (American Wire Gauge) is used for conductors from #18 through #4/0 — lower numbers mean larger wire. Above 4/0, conductor sizes are expressed in kcmil (kilo circular mils), a measure of cross-sectional area. Common sizes are 250, 350, 500, and 750 kcmil. The voltage drop formula uses CM (circular mils) directly: for example, 4/0 AWG = 211,600 CM.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Do I need a permit for electrical work? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">New circuits, panel upgrades, and service changes require a permit and inspection by the Authority Having Jurisdiction (AHJ) in virtually all jurisdictions. Simple repairs like replacing a receptacle typically do not. Always check with your local building department before starting. Unpermitted electrical work can void homeowner's insurance and create obstacles when selling the property.</p>
+      </details>
     </div>
   </section>
 

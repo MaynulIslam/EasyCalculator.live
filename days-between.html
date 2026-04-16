@@ -56,6 +56,22 @@
     gtag('js', new Date());
     gtag('config', 'G-JGP14YZ4V8');
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do you calculate the number of days between two dates?","acceptedAnswer":{"@type":"Answer","text":"Convert both dates to a common reference point (like the number of days since a fixed date), then subtract the earlier from the later. In JavaScript, this is done by subtracting Date objects and dividing by 86,400,000 (milliseconds per day). The calculator handles leap years, month lengths, and cross-year spans automatically."}},
+    {"@type":"Question","name":"Does the calculator include or exclude the start and end dates?","acceptedAnswer":{"@type":"Answer","text":"By default, the calculator uses exclusive counting — it measures the gap between two dates without counting the start date itself. For example, from January 1 to January 3 = 2 days. If you need inclusive counting (counting both the start and end day), add 1 to the result. Legal and contract contexts often specify which method to use."}},
+    {"@type":"Question","name":"How do leap years affect the day count?","acceptedAnswer":{"@type":"Answer","text":"Leap years add one extra day (February 29) to the calendar every 4 years, with exceptions for century years not divisible by 400. Any date range spanning a February 29 in a leap year will have one more day than the same range in a non-leap year. This calculator accounts for all leap years automatically."}},
+    {"@type":"Question","name":"What is the difference between calendar days and business days?","acceptedAnswer":{"@type":"Answer","text":"Calendar days count every day including weekends and holidays. Business days count only Monday through Friday, excluding weekends. Some definitions also exclude statutory holidays. A 30 calendar day notice period is different from a 30 business day notice period — the latter is approximately 6 weeks of calendar time."}},
+    {"@type":"Question","name":"How many weeks is 90 days?","acceptedAnswer":{"@type":"Answer","text":"90 days = 12 weeks and 6 days (since 12 × 7 = 84, and 90 − 84 = 6). In business terms, 90 days is commonly referred to as approximately 3 months, though actual months vary in length (28–31 days), so 3 calendar months is not exactly 90 days."}},
+    {"@type":"Question","name":"How do I calculate 30 days from today?","acceptedAnswer":{"@type":"Answer","text":"Enter today's date as the start date and leave the end date blank, or manually count 30 days forward. With this calculator, enter today as Start Date and today + 30 days as End Date to verify the count. Alternatively, just add 30 days to the current date: if today is April 16, then 30 days later is May 16."}},
+    {"@type":"Question","name":"Can I use this to calculate my notice period at work?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter your resignation date as the start date and count forward by the required notice period (typically 2 weeks, 1 month, or as specified in your contract). If your contract specifies business days, use the business days result. Canadian employment standards typically require at least 1–8 weeks depending on years of service."}},
+    {"@type":"Question","name":"How many days are in a year?","acceptedAnswer":{"@type":"Answer","text":"A standard calendar year has 365 days. A leap year has 366 days (an extra February 29). On average over a 400-year Gregorian cycle, a year has 365.2425 days. For most practical purposes, 365 days per year is accurate enough for date difference calculations."}}
+  ]
+}
+</script>
 </head>
 <body>
 <nav class="navbar" id="navbar">
@@ -224,6 +240,21 @@
 
       <h3>Date Range Tips</h3>
       <p>When counting days inclusively (counting both the start and end date), add 1 to the result. By default, this calculator counts exclusively (start date to end date, not including the end date) — the standard convention for most practical purposes.</p>
+
+      <h3>Worked Example</h3>
+      <p>From <strong>January 1, 2025</strong> to <strong>April 16, 2026</strong>: that's 470 calendar days, or 67 weeks and 1 day, or approximately 15.4 months. In business days (excluding weekends), it's approximately 336 working days. This kind of calculation is useful for determining whether a project has met its deadline, calculating interest accrual, or measuring time elapsed since a key event.</p>
+
+      <h3>Leap Year Impact</h3>
+      <p>A leap year (like 2024) adds one extra day — February 29 — to the calendar. Any date range that spans across a February 29 in a leap year will have one more calendar day than the same span in a non-leap year. For example, January 1 to March 31 in 2024 (a leap year) = 90 days, while the same range in 2025 = 89 days. This calculator handles all leap years automatically using the Gregorian calendar rules.</p>
+
+      <h3>Practical Applications</h3>
+      <ul>
+        <li><strong>Notice periods:</strong> Employment contracts in Canada often require 2 weeks to 3 months notice. Enter your last day to count backward and find when you must give notice.</li>
+        <li><strong>Warranty and return windows:</strong> Most return policies are "30 days from purchase." Enter the purchase date and count 30 days forward to find the deadline.</li>
+        <li><strong>Probation periods:</strong> Many jobs have a 3-month (90-day) probationary period. Find the exact end date.</li>
+        <li><strong>Interest accrual:</strong> Banks calculate daily interest on the exact number of days in a loan period. Knowing precise day counts matters for reconciling interest statements.</li>
+        <li><strong>Pregnancy weeks:</strong> Count from your LMP date to today to find your current gestational week.</li>
+      </ul>
     </div>
   </div>
 
@@ -265,6 +296,44 @@
       <li><strong>Instant Results</strong> — No loading, no waiting</li>
       <li><strong>Works Everywhere</strong> — Desktop, tablet, and mobile friendly</li>
     </ul>
+  </div>
+</section>
+
+<section class="faq-section" style="max-width:860px;margin:0 auto 48px;padding:0 20px">
+  <h2 style="font-size:1.5rem;font-weight:700;color:#0f2b4c;margin-bottom:24px">Frequently Asked Questions</h2>
+  <div class="faq-list" style="display:flex;flex-direction:column;gap:16px">
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do you calculate the number of days between two dates? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Convert both dates to a common numeric reference (milliseconds since a fixed point), subtract the earlier from the later, and divide by 86,400,000 (milliseconds per day). This calculator handles month-length differences, leap years, and cross-year spans automatically.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Does the calculator include or exclude the start and end dates? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">By default, the calculator counts exclusively — the gap between two dates without counting the start date itself. From January 1 to January 3 = 2 days. For inclusive counting (both start and end day counted), simply add 1 to the result. Legal and contract contexts often specify which method applies.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do leap years affect the day count? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Leap years add one extra day (February 29) every 4 years, with exceptions for century years not divisible by 400. Any date range spanning a February 29 in a leap year will have one more day than the same range in a non-leap year. This calculator accounts for all leap years automatically.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the difference between calendar days and business days? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Calendar days count every day including weekends and holidays. Business days count only Monday through Friday, excluding weekends. A 30 business-day notice period equals approximately 6 calendar weeks — significantly longer than 30 calendar days. Always clarify which applies in legal, financial, and employment contexts.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How many weeks is 90 days? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">90 days = 12 weeks and 6 days (12 × 7 = 84; 90 − 84 = 6 remaining days). In common usage 90 days is called "approximately 3 months," but actual months vary from 28 to 31 days — so 3 calendar months is not always exactly 90 days.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I calculate 30 days from today? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Enter today's date as the Start Date and count 30 days forward for the End Date. Quick mental shortcut: same day of next month minus 1 day works for most months. For April 16 → May 16. If you cross a month with fewer days (like February), the calculator adjusts correctly — just enter the dates and let the tool compute.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Can I use this to calculate my notice period at work? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">Yes. Enter your resignation date as Start Date and count forward by the required notice period (2 weeks, 1 month, or as specified in your contract). In Canada, the Employment Standards Act in most provinces requires a minimum of 1–8 weeks depending on your length of service, though your employment contract may require more.</p>
+    </details>
+    <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+      <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How many days are in a year? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+      <p style="margin-top:12px;color:#475569;line-height:1.7">A standard calendar year has 365 days; a leap year has 366 days. The Gregorian calendar averages 365.2425 days per year over a 400-year cycle. For most practical date calculations, 365 days per year is used, with leap year corrections applied automatically.</p>
+    </details>
   </div>
 </section>
 

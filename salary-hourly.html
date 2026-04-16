@@ -77,6 +77,78 @@
       .pay-breakdown-item.full-width { grid-column: 1; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many work hours are in a year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard full-time work year contains 2,080 hours, calculated as 52 weeks multiplied by 40 hours per week. However, if you take paid vacation time, your effective working hours are lower. For example, with 10 vacation days (2 weeks), you work 50 weeks × 40 hours = 2,000 hours per year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I convert an hourly wage to an annual salary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To convert an hourly wage to an annual salary, multiply your hourly rate by the number of hours you work per week, then multiply by 52. For a standard 40-hour week: Annual salary = hourly rate × 40 × 52. For example, $25/hour × 40 × 52 = $52,000 per year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the calculator account for vacation time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. This calculator has a field for paid vacation days per year. When you enter vacation days, the tool subtracts those days from the 52-week year before calculating your effective hourly rate. This gives a more accurate hourly figure — useful when comparing your compensation to a contract or freelance rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is overtime pay and how is it calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Overtime pay is additional compensation for hours worked beyond the standard threshold — typically 40 hours per week in Canada and the US. In most Canadian provinces and under the US Fair Labor Standards Act, overtime must be paid at a rate of at least 1.5 times (time-and-a-half) the regular hourly rate. For example, if your regular rate is $20/hour, overtime is $30/hour."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I compare a salaried job offer to an hourly one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To compare a salaried offer to an hourly one, convert both to the same basis. Divide the annual salary by 2,080 (standard hours) to get the hourly equivalent. Then factor in benefits: employer health insurance, retirement matching, and paid vacation all have real dollar value. A salaried position at $52,000 with benefits may be worth significantly more than a $25/hour contract with no benefits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Canada's minimum wage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minimum wage in Canada is set by each province. As of 2024–2025: Ontario is $17.20/hour, British Columbia is $17.40/hour, Alberta is $15.00/hour, Quebec is $15.75/hour, and Nova Scotia is $15.20/hour. There is no single federal minimum wage for most workers; federally regulated industries follow a separate federal rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I negotiate salary or hourly rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For permanent employment, negotiating annual salary is usually more straightforward and gives you a clearer picture of total compensation including benefits. For contract or freelance work, hourly rate negotiation is standard. Whichever you negotiate, make sure to account for the full package: health benefits, retirement contributions, paid time off, and bonuses can add 20–40% to the base pay value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much of my salary goes to taxes in Canada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on your income and province. As a rough guide, a $52,000 gross salary in Ontario yields approximately $42,000 in net take-home pay after federal tax, provincial tax, CPP, and EI deductions — an effective rate of about 19%. Higher incomes face progressively higher rates: at $80,000 the effective rate is roughly 25%, and at $120,000 it rises to around 30%."
+        }
+      }
+    ]
+  }
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5277511564882514" crossorigin="anonymous"></script>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGP14YZ4V8"></script>
@@ -276,6 +348,27 @@
 
         <h3>Contractor vs. Employee Rate</h3>
         <p>As a contractor or freelancer, your quoted hourly rate should be higher than an equivalent salaried employee's hourly rate because you cover your own self-employment taxes (15.3%), benefits, paid time off, and business expenses. A common rule of thumb: multiply a salaried employee's hourly equivalent by 1.5–2× to arrive at a fair contractor rate.</p>
+
+        <h3>The Standard Conversion Formulas</h3>
+        <p>The most common salary-to-hourly conversion assumes 52 weeks and 40 hours per week, giving 2,080 working hours in a year. The formulas are straightforward: divide your annual salary by 52 to get your weekly pay, then divide that by 40 to get your hourly rate. Going the other direction, multiply your hourly rate by 2,080 to get your full-year equivalent. These figures assume no unpaid time off — if you take vacation, use the vacation days field in the calculator to get a more accurate effective hourly rate.</p>
+
+        <h3>Worked Example: $25/Hour to Annual Salary</h3>
+        <p>If you earn $25 per hour at a standard full-time schedule, your annual salary equivalent is $25 × 40 hours × 52 weeks = $52,000 per year. Your weekly pay is $1,000, your biweekly pay is $2,000, and your monthly equivalent is $52,000 ÷ 12 = $4,333. If you only work part-time at 20 hours per week instead of 40, the same $25/hour rate produces just $26,000 per year — exactly half. This makes the hours-per-week input critical when comparing job offers.</p>
+
+        <h3>Part-Time vs. Full-Time Comparison</h3>
+        <p>Two jobs paying the same hourly rate can look very different in annual terms depending on hours worked. A $25/hour position at 40 hours/week yields $52,000/year, while the same rate at 20 hours/week yields only $26,000/year. When evaluating part-time roles, always convert to an annualized figure so you can compare apples to apples against other offers or your living expenses.</p>
+
+        <h3>Overtime: How It Affects Your Effective Hourly Rate</h3>
+        <p>In most Canadian provinces and under US federal law, any hours worked beyond 40 per week must be compensated at a minimum of 1.5 times your regular rate — commonly called "time-and-a-half." If your base rate is $25/hour, overtime hours pay $37.50. If you regularly work 45 hours a week, your effective average hourly rate across all hours is higher than $25. This matters when evaluating salaried roles that implicitly require long hours, since exempt salaried employees receive no overtime premium regardless of how many hours they work.</p>
+
+        <h3>Canadian Minimum Wage by Province</h3>
+        <p>Minimum wage in Canada varies significantly by province, and most provinces update rates annually. As of 2024–2025, Ontario sits at $17.20/hour, British Columbia at $17.40/hour, Alberta at $15.00/hour, Quebec at $15.75/hour, and Manitoba at $15.80/hour. These are the legal floors — actual market wages in professional roles are considerably higher. Use this calculator to understand exactly where any wage offer sits on an annual basis relative to your cost of living.</p>
+
+        <h3>Gross vs. Net Salary: What You Actually Take Home</h3>
+        <p>The annual figure this calculator produces is your gross salary — before any deductions. In Ontario, a $52,000 gross salary translates to approximately $42,000 in net take-home pay after federal income tax, provincial income tax, CPP contributions, and EI premiums. That is roughly an 81-cent take-home for every dollar earned at this income level. Use our Salary Tax Calculator alongside this tool to see your full net pay picture.</p>
+
+        <h3>Salary Benchmarking: Using This Tool to Compare Job Offers</h3>
+        <p>When you receive multiple job offers with different structures — one annual salary, one hourly contract, one part-time role — convert everything to the same annual or hourly basis using this calculator. Then add the estimated dollar value of benefits: a job offering $50,000 plus employer health coverage, 4% RRSP matching, and 15 vacation days may be worth $10,000–$15,000 more in total compensation than a $55,000 salary with no benefits. Never compare base numbers alone.</p>
       </div>
     </div>
 
@@ -320,6 +413,44 @@
         <li><strong>Instant Results</strong> — No loading, no waiting</li>
         <li><strong>Works Everywhere</strong> — Desktop, tablet, and mobile friendly</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="faq-section" style="max-width:860px;margin:0 auto 48px;padding:0 20px">
+    <h2 style="font-size:1.5rem;font-weight:700;color:#0f2b4c;margin-bottom:24px">Frequently Asked Questions</h2>
+    <div class="faq-list" style="display:flex;flex-direction:column;gap:16px">
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How many work hours are in a year? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">A standard full-time work year contains 2,080 hours — 52 weeks multiplied by 40 hours per week. If you take paid vacation, your effective working hours are lower. With 10 vacation days (2 weeks off), you work 50 weeks × 40 hours = 2,000 hours per year, which raises your effective hourly rate slightly compared to the 2,080-hour baseline.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I convert an hourly wage to an annual salary? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Multiply your hourly rate by the number of hours you work per week, then multiply by 52. For a standard 40-hour week: hourly rate × 40 × 52. For example, $25/hour × 40 × 52 = $52,000 per year. If you work more or fewer than 40 hours, substitute your actual weekly hours.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Does the calculator account for vacation time? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Yes. Enter your paid vacation days in the dedicated field and the calculator subtracts those days from the 52-week year before computing your effective hourly rate. This matters most when comparing your employed hourly equivalent to a contract rate, since contractors typically don't receive paid vacation.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is overtime pay and how is it calculated? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Overtime is additional pay for hours worked beyond the standard threshold — typically 40 hours/week. In most Canadian provinces and under US law, overtime must be paid at a minimum of 1.5 times (time-and-a-half) your regular rate. If your base rate is $25/hour, overtime pays $37.50/hour. Salaried employees classified as "exempt" are not entitled to overtime regardless of hours worked.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How do I compare a salaried job offer to an hourly one? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Convert both offers to the same annual basis. Divide the hourly rate by 2,080 hours, or multiply it by 2,080 to annualize. Then add the value of benefits: employer health coverage, retirement matching, and paid vacation can add $8,000–$20,000 in real value to a salaried role. A $52,000 salaried job with benefits may be worth more than a $27/hour contract with none.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">What is Canada's minimum wage? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">Minimum wage in Canada is set provincially. As of 2024–2025: Ontario is $17.20/hr, British Columbia is $17.40/hr, Alberta is $15.00/hr, Quebec is $15.75/hr, and Manitoba is $15.80/hr. Rates are reviewed annually and typically increase each April 1. Federally regulated industries follow a separate federal minimum wage.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">Should I negotiate salary or hourly rate? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">For permanent employment, negotiating annual salary is typical and makes total compensation easier to evaluate alongside benefits. For contract or freelance work, hourly rate is the standard. Either way, come prepared with your converted equivalent — know your $52,000 salary as "$25/hr" or your $30/hr rate as "$62,400/year" so you can negotiate confidently across different formats.</p>
+      </details>
+      <details style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px">
+        <summary style="font-weight:600;color:#1e293b;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">How much of my salary goes to taxes in Canada? <span style="font-size:1.2rem;color:#f97316">+</span></summary>
+        <p style="margin-top:12px;color:#475569;line-height:1.7">A $52,000 gross salary in Ontario yields approximately $42,000 in net take-home pay after federal tax, provincial tax, CPP, and EI — an effective deduction rate of about 19%. At $80,000 gross the effective rate rises to roughly 25%, and at $120,000 to around 30%. Use our Salary Tax Calculator for a precise breakdown based on your province.</p>
+      </details>
     </div>
   </section>
 
